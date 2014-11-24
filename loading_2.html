@@ -21,27 +21,54 @@
             animation: loading .7s ease-in infinite;
         }
         @-webkit-keyframes loading {
-            0%, 12.49% { -webkit-transform: rotate(0); transform: rotate(0); }
-            12.5%,24.99% { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
-            25%,37.49% { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
-            37.5%,49.99% { -webkit-transform: rotate(135deg); transform: rotate(135deg); }
-            50%,62.49% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-            62.5%,74.99% { -webkit-transform: rotate(225deg); transform: rotate(225deg); }
-            75%,87.49% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
-            87.5%,99.99% { -webkit-transform: rotate(315deg); transform: rotate(315deg); }
-            100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+            0%, 12.49% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+            12.5%,24.99% {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            25%,37.49% {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+            37.5%,49.99% {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            50%,62.49% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+            62.5%,74.99% {
+                -webkit-transform: rotate(225deg);
+                transform: rotate(225deg);
+            }
+            75%,87.49% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+            87.5%,99.99% {
+                -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         }
         .loading-wrap .icon {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 8px;
-            height: 8px;
-            margin: -4px 0 0 -4px;
-            border-radius: 50%;
-            display: block;
-            background-color: rgba(0,0,0,0.4);
-        }
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             width: 8px;
+             height: 8px;
+             margin: -4px 0 0 -4px;
+             border-radius: 50%;
+             display: block;
+             background-color: rgba(0,0,0,0.4);
+         }
         .loading-wrap .icon-1 {
             width: 10px;
             height: 10px;
