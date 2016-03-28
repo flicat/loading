@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <title>loading</title>
+    <style>
+        /**
+ * Loading animation like the one seen on http://www.freeger.com/projects/contextad/ with CSS
+ * Caveat: Not DRY. The content needs to be repeated in a data- attribute (or directly in the CSS).
+ */
+
+        body {
+            background: #ccc51c;
+            min-height: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            left: 50%;
+            margin-left: -1.9em;
+            color: hsla(0,0%,100%,.3);
+            font: 900 800% Baskerville, 'Palatino Linotype', Palatino, serif;
+        }
+
+        @keyframes loading {
+            from { max-width: 0; }
+        }
+
+        h1:before {
+            content: attr(data-content);
+            position: absolute;
+            overflow: hidden;
+            max-width: 4em;
+            color: white;
+            animation: loading 10s linear;
+        }
+    </style>
+</head>
+<body>
+<h1 data-content="Contad">Contad</h1>
+</body>
+</html>
